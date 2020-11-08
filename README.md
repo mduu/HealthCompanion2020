@@ -1,6 +1,6 @@
-# HealthCompanion2020
+# Health Companion 2020
 
-The source-code repo for Health Hack Team "Health Companion".
+The source-code repo for [Health-Hack 2020](https://2020.healthhack.solutions) Team "Health Companion".
 
 ## Project summary
 

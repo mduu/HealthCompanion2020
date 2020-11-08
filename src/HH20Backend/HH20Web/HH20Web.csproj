@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\HH20Core\HH20Core.csproj" />
+    </ItemGroup>
+
+</Project>

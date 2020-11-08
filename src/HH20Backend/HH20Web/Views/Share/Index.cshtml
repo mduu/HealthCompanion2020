@@ -1,0 +1,128 @@
+@model HH20Core.Interactors.ShareViewing.AllSharedData
+
+@{
+    ViewBag.Title = "Medical record";
+    Layout = "_Layout";
+}
+
+
+<p>Medical record of</p>
+<h1>@Model.User.Firstname @Model.User.Lastname</h1>
+
+<hr/>
+
+<div class="row">
+    <form>
+        <div class="form-row col-12">
+            <div class="form-group col-md-6">
+                <label for="firstname">Firstname</label>
+                <input type="text" readonly class="form-control-plaintext" id="firstname" value="@Model.User.Firstname">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lastname">Lastname</label>
+                <input type="text" readonly class="form-control-plaintext" id="lastname" value="@Model.User.Lastname">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="mobile">Mobile</label>
+                <input type="text" readonly class="form-control-plaintext" id="mobile" value="@Model.User.Mobile">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input type="text" readonly class="form-control-plaintext" id="email" value="@Model.User.Email">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="street">Street</label>
+                <input type="text" readonly class="form-control-plaintext" id="street" value="@Model.User.Street">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="street">ZIP</label>
+                <input type="text" readonly class="form-control-plaintext" id="zip" value="@Model.User.Zip">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="street">City</label>
+                <input type="text" readonly class="form-control-plaintext" id="city" value="@Model.User.City">
+            </div>
+        </div>
+    </form>
+</div>
+
+<hr/>
+
+<div class="row">
+    <form>
+        <div class="form-row col-12">
+            <div class="form-group col-md-3">
+                <label for="weight">Weight</label>
+                <input type="text" readonly class="form-control-plaintext" id="weight" value="@Model.User.Weight">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="height">Height</label>
+                <input type="text" readonly class="form-control-plaintext" id="height" value="@Model.User.Height">
+            </div>
+        </div>
+    </form>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-md-6">
+        <h4>Diseases @if (Model.Diseases.Any())
+                     {
+                         <span class="badge badge-danger">@Model.Diseases.Count()</span>
+                     }</h4>
+
+        @if (Model.Diseases.Any())
+        {
+            <ul>
+                @foreach (var disease in Model.Diseases)
+                {
+                <li>@disease.GetCaption()</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <div class="alert alert-success" role="alert">
+                No diseases.
+            </div>
+        }
+    </div>
+    <div class="col-md-6">
+        <h4>Acute Diseases @if (Model.AcuteDiseases.Any())
+                     {
+                         <span class="badge badge-danger">@Model.AcuteDiseases.Count()</span>
+                     }</h4>
+
+        @if (Model.AcuteDiseases.Any())
+        {
+            <ul>
+                @foreach (var disease in Model.AcuteDiseases)
+                {
+                <li>@disease.GetCaption()</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <div class="alert alert-success" role="alert">
+                No acute diseases.
+            </div>
+        }
+    </div>
+</div>
+
+<hr/>
+
+<h4>See more of my data</h4>
+
+<div class="row">
+    <div class="col-md-6">
+        <a role="button" class="btn btn-lg btn-block btn-primary mt-3" asp-controller="Share" asp-action="Activities" asp-route-shareKey="@ViewBag.ShareKey"><i class="fa fa-calendar" aria-hidden="true"></i> Activities / Timeline</a>
+    </div>
+    <div class="col-md-6">
+        <a role="button" class="btn btn-lg btn-block btn-primary mt-3" asp-controller="Share" asp-action="Documents" asp-route-shareKey="@ViewBag.ShareKey"><i class="fa fa-file-text-o" aria-hidden="true"></i> Documents</a>
+    </div>
+</div>

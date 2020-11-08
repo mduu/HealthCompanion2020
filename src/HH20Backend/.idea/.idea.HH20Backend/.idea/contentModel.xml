@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="HH20Backend.sln" t="IncludeFlat" />
+      <e p="HH20Core" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Configuration" t="Include">
+          <e p="DatabaseConfiguration.cs" t="Include" />
+        </e>
+        <e p="Dtos" t="Include">
+          <e p="ActivityDto.cs" t="Include" />
+          <e p="CommentDto.cs" t="Include" />
+          <e p="CreateDocumentDto.cs" t="Include" />
+          <e p="DocumentDownloadDto.cs" t="Include" />
+          <e p="DocumentDto.cs" t="Include" />
+          <e p="ShareDto.cs" t="Include" />
+        </e>
+        <e p="HH20Core.csproj" t="IncludeRecursive" />
+        <e p="Interactors" t="Include">
+          <e p="Activity" t="Include">
+            <e p="ActivityInteractor.cs" t="Include" />
+          </e>
+          <e p="Comments" t="Include">
+            <e p="CommentsInteractor.cs" t="Include" />
+          </e>
+          <e p="Documents" t="Include">
+            <e p="DocumentsInteractor.cs" t="Include" />
+          </e>
+          <e p="Import" t="Include">
+            <e p="AllDiseases.cs" t="Include" />
+            <e p="ConfirmImportUserInteractor.cs" t="Include" />
+            <e p="RequestImportUserInteractor.cs" t="Include" />
+          </e>
+          <e p="ShareCreation" t="Include">
+            <e p="ShareInteractor.cs" t="Include" />
+          </e>
+          <e p="ShareViewing" t="Include">
+            <e p="AllSharedData.cs" t="Include" />
+            <e p="GetAllSharedDataInteractor.cs" t="Include" />
+            <e p="GetSharedActivitiesInteractor.cs" t="Include" />
+            <e p="GetSharedDocumentsInteractor.cs" t="Include" />
+            <e p="InsertActivityInteractor.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Models" t="Include">
+          <e p="Activity.cs" t="Include" />
+          <e p="ActivityType.cs" t="Include" />
+          <e p="AcutDeseasType.cs" t="Include" />
+          <e p="AcuteDisease.cs" t="Include" />
+          <e p="Comment.cs" t="Include" />
+          <e p="Deseas.cs" t="Include" />
+          <e p="DeseasType.cs" t="Include" />
+          <e p="Document.cs" t="Include" />
+          <e p="DocumentType.cs" t="Include" />
+          <e p="Share.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="HH20Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="ActivityRepository.cs" t="Include" />
+          <e p="AcuteDiseaseRepository.cs" t="Include" />
+          <e p="BaseRepository.cs" t="Include" />
+          <e p="CommentsRepository.cs" t="Include" />
+          <e p="DiseaseRepository.cs" t="Include" />
+          <e p="DocumentRepository.cs" t="Include" />
+          <e p="IActivityRepository.cs" t="Include" />
+          <e p="IAcuteDiseaseRepository.cs" t="Include" />
+          <e p="IBaseRepository.cs" t="Include" />
+          <e p="ICommentsRepository.cs" t="Include" />
+          <e p="IDiseaseRepository.cs" t="Include" />
+          <e p="IDocumentRepository.cs" t="Include" />
+          <e p="IShareRepository.cs" t="Include" />
+          <e p="IUserRepository.cs" t="Include" />
+          <e p="ShareRepository.cs" t="Include" />
+          <e p="UserRepository.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="DocumentStorage" t="Include">
+            <e p="BlobDocumentStorage.cs" t="Include" />
+            <e p="BlobDocumentStorageOptions.cs" t="Include" />
+            <e p="IDocumentStorage.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="HH20Web" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="API" t="Include">
+            <e p="ActivityController.cs" t="Include" />
+            <e p="CommentsController.cs" t="Include" />
+            <e p="CreateShareController.cs" t="Include" />
+            <e p="DocumentController.cs" t="Include" />
+            <e p="UserApiController.cs" t="Include" />
+          </e>
+          <e p="HomeController.cs" t="Include" />
+          <e p="ShareController.cs" t="Include" />
+        </e>
+        <e p="HH20Web.csproj" t="IncludeRecursive" />
+        <e p="Middleware" t="Include">
+          <e p="CurrentUserInformation.cs" t="Include" />
+          <e p="ICurrentUserInformation.cs" t="Include" />
+          <e p="Middleware.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="ErrorViewModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="HH20Web.AssemblyInfo.cs" t="Include" />
+              <e p="HH20Web.RazorAssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="ServiceRegistrations.cs" t="Include" />
+        <e p="Startup.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Home" t="Include">
+            <e p="Index.cshtml" t="Include" />
+            <e p="Privacy.cshtml" t="Include" />
+          </e>
+          <e p="Share" t="Include">
+            <e p="Activities.cshtml" t="Include" />
+            <e p="Documents.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+            <e p="Error.cshtml" t="Include" />
+          </e>
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="assets" t="Include">
+            <e p="activityicons" t="Include">
+              <e p="Accident.png" t="Include" />
+              <e p="DoctorVisit.png" t="Include" />
+              <e p="HospitalVisit.png" t="Include" />
+              <e p="Illness.png" t="Include" />
+              <e p="Meal.png" t="Include" />
+              <e p="measurement.png" t="Include" />
+              <e p="Medication.png" t="Include" />
+              <e p="Movement.png" t="Include" />
+              <e p="vaccination.png" t="Include" />
+            </e>
+            <e p="img" t="Include">
+              <e p="calendar3.svg" t="Include" />
+              <e p="file-earmark-text.svg" t="Include" />
+              <e p="house-fill.svg" t="Include" />
+              <e p="noimage.jpg" t="Include" />
+            </e>
+          </e>
+          <e p="css" t="Include">
+            <e p="site.css" t="Include" />
+          </e>
+          <e p="favicon.png" t="Include" />
+          <e p="js" t="Include">
+            <e p="site.js" t="Include" />
+          </e>
+          <e p="lib" t="Include">
+            <e p="bootstrap" t="Include">
+              <e p="dist" t="Include">
+                <e p="css" t="Include">
+                  <e p="bootstrap-grid.css" t="Include" />
+                  <e p="bootstrap-grid.css.map" t="Include" />
+                  <e p="bootstrap-grid.min.css" t="Include" />
+                  <e p="bootstrap-grid.min.css.map" t="Include" />
+                  <e p="bootstrap-reboot.css" t="Include" />
+                  <e p="bootstrap-reboot.css.map" t="Include" />
+                  <e p="bootstrap-reboot.min.css" t="Include" />
+                  <e p="bootstrap-reboot.min.css.map" t="Include" />
+                  <e p="bootstrap.css" t="Include" />
+                  <e p="bootstrap.css.map" t="Include" />
+                  <e p="bootstrap.min.css" t="Include" />
+                  <e p="bootstrap.min.css.map" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="bootstrap.bundle.js" t="Include" />
+                  <e p="bootstrap.bundle.js.map" t="Include" />
+                  <e p="bootstrap.bundle.min.js" t="Include" />
+                  <e p="bootstrap.bundle.min.js.map" t="Include" />
+                  <e p="bootstrap.js" t="Include" />
+                  <e p="bootstrap.js.map" t="Include" />
+                  <e p="bootstrap.min.js" t="Include" />
+                  <e p="bootstrap.min.js.map" t="Include" />
+                </e>
+              </e>
+              <e p="LICENSE" t="Include" />
+            </e>
+            <e p="jquery" t="Include">
+              <e p="dist" t="Include">
+                <e p="jquery.js" t="Include" />
+                <e p="jquery.min.js" t="Include" />
+                <e p="jquery.min.map" t="Include" />
+              </e>
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+            <e p="jquery-validation" t="Include">
+              <e p="dist" t="Include">
+                <e p="additional-methods.js" t="Include" />
+                <e p="additional-methods.min.js" t="Include" />
+                <e p="jquery.validate.js" t="Include" />
+                <e p="jquery.validate.min.js" t="Include" />
+              </e>
+              <e p="LICENSE.md" t="Include" />
+            </e>
+            <e p="jquery-validation-unobtrusive" t="Include">
+              <e p="jquery.validate.unobtrusive.js" t="Include" />
+              <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_HH20Backend.-667427020.00" t="ExcludeRecursive" />
+  </component>
+</project>

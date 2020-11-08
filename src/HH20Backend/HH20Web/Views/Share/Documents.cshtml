@@ -1,0 +1,106 @@
+@model HH20Core.Interactors.ShareViewing.SharedDocuments
+
+@{
+    ViewBag.Title = "Documents";
+    Layout = "_Layout";
+}
+
+<p>Medical record of</p>
+<h1>@Model.User.Firstname @Model.User.Lastname</h1>
+
+<hr/>
+
+<h2 class="mb-4">Documents</h2>
+
+<form class="form-inline" id="filterform" asp-controller="Share" asp-action="Documents" asp-route-shareKey="@ViewBag.ShareKey" method="get">
+    <label class="sr-only" for="documentTypeFilter"><i class="fa fa-filter" aria-hidden="true"></i> Filter</label>
+    <select class="form-control" id="activityTypeFilter" name="documentTypeFilter" asp-for="DocumentTypeFilter">
+        <option value="-1">No filter</option>
+        <option value="0">General</option>
+        <option value="1">Diagnosis</option>
+        <option value="2">XRays</option>
+        <option value="3">CtScans</option>
+        <option value="4">MedicalReports</option>
+        <option value="5">LabResults</option>
+        <option value="6">Prescription</option>
+        <option value="7">VaccinationDetails</option>
+        <option value="8">Bill</option>
+    </select>
+
+    <button type="submit" class="btn btn-primary ml-2"><i class="fa fa-filter" aria-hidden="true"></i> Filter</button>
+
+    <button type="button" class="btn btn-primary ml-4" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-upload"></i> Upload document</button>
+</form>
+
+<div class="row mt-4">
+
+    @foreach (var document in Model.Documents)
+    {
+        <div class="card ml-3" style="width: 18rem;">
+            @if (document.IsImage)
+            {
+                <a
+                    href="#"
+                    class="zoomable-image"
+                    data-url="@Url.Action("DownloadDocumentById", "Share", new {shareKey = Model.ShareKey, documentId = document.Document.Id})"
+                    data-title="@document.Document.Title">
+
+                    <img
+                        src="@Url.Action("DownloadDocumentById", "Share", new {shareKey = Model.ShareKey, documentId = document.Document.Id})"
+                        class="card-img-top"
+                        alt="@document.Document.Title">
+                </a>
+            }
+            else
+            {
+                <img src="/assets/img/noimage.jpg" class="card-img-top" alt="No image">
+            }
+            <div class="card-body">
+                <h5 class="card-title">@document.Document.Title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">File: @document.Document.Filename</h6>
+                <p class="card-text">@document.Document.Description</p>
+            </div>
+            <div class="card-footer">
+                <a asp-action="DownloadDocumentById" asp-controller="Share" asp-route-shareKey="@Model.ShareKey" asp-route-documentId="@document.Document.Id" class="btn btn-primary"><i class="fa fa-download"></i> Download</a>
+            </div>
+        </div>
+    }
+
+</div>
+
+<div class="modal" id="image-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="modal-img" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+    
+    $(function () {
+        
+        $('.zoomable-image').click(function () {
+            let url = $(this).data("url");
+            let alt = $(this).data("title");
+            $("#modal-img").attr("src", url);
+            document.getElementById("imageModalTitle").innerHTML = alt;
+            $("#image-modal").modal('show');
+        });
+        
+    });
+</script>
+}

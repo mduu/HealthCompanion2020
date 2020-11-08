@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xZf-L1-Lxf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Akkurat-Bold.ttf">
+            <string>Akkurat-Bold</string>
+        </array>
+        <array key="Akkurat-Normal.ttf">
+            <string>Akkurat</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Create Activity View Controller-->
+        <scene sceneID="bE3-GS-ChP">
+            <objects>
+                <viewController id="xZf-L1-Lxf" customClass="CreateActivityViewController" customModule="HealthHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T2M-Lv-jiZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="mZ3-5d-dbm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Otx-n8-Vbl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsc-5N-qEJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmR-MK-cl8">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3L-IP-AnC">
+                                                <rect key="frame" x="24" y="20" width="40" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="mXj-XL-26o"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCV-L3-EVT">
+                                                <rect key="frame" x="24" y="71" width="96" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="F21-N8-Q0Y"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckC-RU-gYt">
+                                                <rect key="frame" x="24" y="132" width="42.5" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="WUi-R6-nRQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hws-gg-aPM">
+                                                <rect key="frame" x="24" y="193" width="91" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="bja-y7-jsu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xhy-VS-wvn">
+                                                <rect key="frame" x="141" y="13.5" width="210" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="6IB-hs-1R4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Akkurat-Bold" family="Akkurat-Bold" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejZ-kJ-fnI">
+                                                <rect key="frame" x="143" y="64.5" width="208" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="ZHa-QL-7uA"/>
+                                                    <constraint firstAttribute="height" constant="34" id="awJ-hG-XVI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Akkurat-Bold" family="Akkurat-Bold" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="bKC-2V-DzA">
+                                                <rect key="frame" x="143" y="122.5" width="208" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="ECz-co-BOD"/>
+                                                </constraints>
+                                            </datePicker>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nL7-oT-1qk">
+                                                <rect key="frame" x="143" y="186.5" width="208" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="V4a-8O-OdI"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="ksF-aq-fFf"/>
+                                                    <constraint firstAttribute="height" constant="34" id="pof-5q-E7F"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Akkurat-Bold" family="Akkurat-Bold" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gCy-6j-9w2">
+                                                <rect key="frame" x="127.5" y="270.5" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="J72-EI-emI"/>
+                                                    <constraint firstAttribute="height" constant="120" id="zEh-Rm-h3o"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bd0-rR-KQL" customClass="ButtonDark" customModule="HealthHack" customModuleProvider="target">
+                                                <rect key="frame" x="151" y="505" width="200" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="MA3-Ts-FBp"/>
+                                                    <constraint firstAttribute="width" constant="200" id="QAl-yh-w1k"/>
+                                                </constraints>
+                                                <state key="normal" title="Upload Foto to bite.AI"/>
+                                                <connections>
+                                                    <action selector="onUploadFotoButtonPressed:" destination="xZf-L1-Lxf" eventType="touchUpInside" id="Qbz-ia-hBQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRb-Zd-wgj" customClass="ButtonDark" customModule="HealthHack" customModuleProvider="target">
+                                                <rect key="frame" x="151" y="505" width="200" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="b3t-wx-ACf"/>
+                                                    <constraint firstAttribute="width" constant="200" id="s8K-lR-gxR"/>
+                                                </constraints>
+                                                <state key="normal" title="Set Reminder"/>
+                                                <connections>
+                                                    <action selector="onSetReminderPressed:" destination="xZf-L1-Lxf" eventType="touchUpInside" id="h8o-cY-Jtk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="gCy-6j-9w2" firstAttribute="top" secondItem="nL7-oT-1qk" secondAttribute="bottom" constant="50" id="0dQ-2T-PGe"/>
+                                            <constraint firstItem="ejZ-kJ-fnI" firstAttribute="leading" secondItem="wCV-L3-EVT" secondAttribute="trailing" constant="23" id="2JI-IO-BZQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Bd0-rR-KQL" secondAttribute="bottom" constant="14" id="6Ep-2f-W0a"/>
+                                            <constraint firstItem="gCy-6j-9w2" firstAttribute="centerX" secondItem="lmR-MK-cl8" secondAttribute="centerX" id="E12-vl-8wa"/>
+                                            <constraint firstItem="ckC-RU-gYt" firstAttribute="leading" secondItem="lmR-MK-cl8" secondAttribute="leading" constant="24" id="L5d-XH-bVZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="nL7-oT-1qk" secondAttribute="trailing" constant="24" id="MfO-Xg-4EO"/>
+                                            <constraint firstAttribute="trailing" secondItem="ejZ-kJ-fnI" secondAttribute="trailing" constant="24" id="Nnz-Cm-8bN"/>
+                                            <constraint firstItem="x3L-IP-AnC" firstAttribute="top" secondItem="lmR-MK-cl8" secondAttribute="top" constant="20" id="RDT-oK-hzd"/>
+                                            <constraint firstAttribute="trailing" secondItem="bKC-2V-DzA" secondAttribute="trailing" constant="24" id="SnQ-je-W9n"/>
+                                            <constraint firstItem="nL7-oT-1qk" firstAttribute="leading" secondItem="bKC-2V-DzA" secondAttribute="leading" id="UQF-YI-xw2"/>
+                                            <constraint firstAttribute="bottom" secondItem="WRb-Zd-wgj" secondAttribute="bottom" constant="14" id="UfA-11-wq7"/>
+                                            <constraint firstItem="Xhy-VS-wvn" firstAttribute="leading" secondItem="x3L-IP-AnC" secondAttribute="trailing" constant="77" id="XcZ-8g-8L8"/>
+                                            <constraint firstItem="ckC-RU-gYt" firstAttribute="top" secondItem="wCV-L3-EVT" secondAttribute="bottom" constant="40" id="YRQ-7C-h4Y"/>
+                                            <constraint firstItem="wCV-L3-EVT" firstAttribute="leading" secondItem="lmR-MK-cl8" secondAttribute="leading" constant="24" id="YSv-WG-AeG"/>
+                                            <constraint firstItem="bKC-2V-DzA" firstAttribute="leading" secondItem="ejZ-kJ-fnI" secondAttribute="leading" id="a06-OQ-WBb"/>
+                                            <constraint firstItem="Hws-gg-aPM" firstAttribute="leading" secondItem="lmR-MK-cl8" secondAttribute="leading" constant="24" id="bL8-Fs-S6a"/>
+                                            <constraint firstItem="Xhy-VS-wvn" firstAttribute="centerY" secondItem="x3L-IP-AnC" secondAttribute="centerY" id="iUh-7f-LbX"/>
+                                            <constraint firstItem="Hws-gg-aPM" firstAttribute="top" secondItem="ckC-RU-gYt" secondAttribute="bottom" constant="40" id="lDI-tt-UGO"/>
+                                            <constraint firstItem="bKC-2V-DzA" firstAttribute="centerY" secondItem="ckC-RU-gYt" secondAttribute="centerY" id="maK-Sg-9zw"/>
+                                            <constraint firstItem="x3L-IP-AnC" firstAttribute="leading" secondItem="lmR-MK-cl8" secondAttribute="leading" constant="24" id="nMB-ZC-dnb"/>
+                                            <constraint firstItem="nL7-oT-1qk" firstAttribute="centerY" secondItem="Hws-gg-aPM" secondAttribute="centerY" id="nmA-pk-iLX"/>
+                                            <constraint firstAttribute="trailing" secondItem="WRb-Zd-wgj" secondAttribute="trailing" constant="24" id="o8m-rj-GIE"/>
+                                            <constraint firstItem="wCV-L3-EVT" firstAttribute="top" secondItem="x3L-IP-AnC" secondAttribute="bottom" constant="30" id="uCO-Lg-6pi"/>
+                                            <constraint firstItem="ejZ-kJ-fnI" firstAttribute="centerY" secondItem="wCV-L3-EVT" secondAttribute="centerY" id="y2f-FC-AFB"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xhy-VS-wvn" secondAttribute="trailing" constant="24" id="yBy-Zi-LwM"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bd0-rR-KQL" secondAttribute="trailing" constant="24" id="zvh-6I-ujy"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lmR-MK-cl8" secondAttribute="trailing" id="Bv7-fN-X9S"/>
+                                    <constraint firstItem="lmR-MK-cl8" firstAttribute="top" secondItem="wsc-5N-qEJ" secondAttribute="top" id="PCv-KO-NKC"/>
+                                    <constraint firstAttribute="bottom" secondItem="lmR-MK-cl8" secondAttribute="bottom" id="Qmb-6b-86W"/>
+                                    <constraint firstItem="lmR-MK-cl8" firstAttribute="centerY" secondItem="wsc-5N-qEJ" secondAttribute="centerY" id="qs1-A4-Fzg"/>
+                                    <constraint firstItem="lmR-MK-cl8" firstAttribute="leading" secondItem="wsc-5N-qEJ" secondAttribute="leading" id="zp2-Eu-ytE"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ZH-FI-4LO" customClass="ButtonLight" customModule="HealthHack" customModuleProvider="target">
+                                <rect key="frame" x="24" y="567" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fuK-vB-UU4"/>
+                                    <constraint firstAttribute="width" constant="150" id="sj7-tb-5NY"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelTapped" destination="xZf-L1-Lxf" eventType="touchUpInside" id="ejG-fb-Ei9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enT-vd-Mau" customClass="ButtonDark" customModule="HealthHack" customModuleProvider="target">
+                                <rect key="frame" x="201" y="567" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="W7s-2P-B0e"/>
+                                    <constraint firstAttribute="width" constant="150" id="dE0-yq-Kr0"/>
+                                </constraints>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveTapped" destination="xZf-L1-Lxf" eventType="touchUpInside" id="0EA-mb-4jf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wsc-5N-qEJ" firstAttribute="leading" secondItem="Otx-n8-Vbl" secondAttribute="leading" id="3TF-LC-ZcM"/>
+                            <constraint firstAttribute="trailing" secondItem="wsc-5N-qEJ" secondAttribute="trailing" id="GQE-ZL-1Yb"/>
+                            <constraint firstItem="mZ3-5d-dbm" firstAttribute="top" secondItem="8ZH-FI-4LO" secondAttribute="bottom" constant="50" id="Tro-ly-l6N"/>
+                            <constraint firstItem="enT-vd-Mau" firstAttribute="top" secondItem="wsc-5N-qEJ" secondAttribute="bottom" constant="8" id="cKa-qt-nke"/>
+                            <constraint firstItem="8ZH-FI-4LO" firstAttribute="leading" secondItem="Otx-n8-Vbl" secondAttribute="leading" constant="24" id="ieI-Bn-Ykt"/>
+                            <constraint firstItem="wsc-5N-qEJ" firstAttribute="top" secondItem="T2M-Lv-jiZ" secondAttribute="bottom" id="nFR-O6-EJT"/>
+                            <constraint firstAttribute="trailing" secondItem="enT-vd-Mau" secondAttribute="trailing" constant="24" id="o7n-ze-jAB"/>
+                            <constraint firstItem="lmR-MK-cl8" firstAttribute="width" secondItem="Otx-n8-Vbl" secondAttribute="width" id="ten-bO-VSK"/>
+                            <constraint firstItem="mZ3-5d-dbm" firstAttribute="top" secondItem="enT-vd-Mau" secondAttribute="bottom" constant="50" id="ypI-t5-Mmh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="lmR-MK-cl8" id="Hlm-Vd-af5"/>
+                        <outlet property="datePickerActivity" destination="bKC-2V-DzA" id="aB9-0I-ibw"/>
+                        <outlet property="fotoUploadButton" destination="Bd0-rR-KQL" id="3qL-BS-tyV"/>
+                        <outlet property="imageViewActivityType" destination="gCy-6j-9w2" id="RjM-AI-LJn"/>
+                        <outlet property="labelActivity" destination="ckC-RU-gYt" id="bVf-89-PkK"/>
+                        <outlet property="labelActivityType" destination="Hws-gg-aPM" id="7bG-uI-k1R"/>
+                        <outlet property="labelDescription" destination="wCV-L3-EVT" id="IeH-xS-KIa"/>
+                        <outlet property="labelTitle" destination="x3L-IP-AnC" id="T2l-N3-37e"/>
+                        <outlet property="scrollView" destination="wsc-5N-qEJ" id="NMb-fl-nT1"/>
+                        <outlet property="setReminderButton" destination="WRb-Zd-wgj" id="1W3-qD-dOc"/>
+                        <outlet property="textFieldActivityType" destination="nL7-oT-1qk" id="FIJ-dm-qze"/>
+                        <outlet property="textFieldDescription" destination="ejZ-kJ-fnI" id="N7i-uc-4vW"/>
+                        <outlet property="textFieldTitle" destination="Xhy-VS-wvn" id="qZc-U2-kQ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpL-jN-0wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.60000000000002" y="385.45727136431788"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="8ZH-FI-4LO">
+            <size key="intrinsicContentSize" width="48" height="30"/>
+        </designable>
+        <designable name="Bd0-rR-KQL">
+            <size key="intrinsicContentSize" width="150" height="30"/>
+        </designable>
+        <designable name="WRb-Zd-wgj">
+            <size key="intrinsicContentSize" width="93" height="30"/>
+        </designable>
+        <designable name="enT-vd-Mau">
+            <size key="intrinsicContentSize" width="34" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

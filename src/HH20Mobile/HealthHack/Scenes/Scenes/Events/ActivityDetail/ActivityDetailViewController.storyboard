@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xZf-L1-Lxf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Akkurat-Bold.ttf">
+            <string>Akkurat-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Activity Detail View Controller-->
+        <scene sceneID="bE3-GS-ChP">
+            <objects>
+                <viewController id="xZf-L1-Lxf" customClass="ActivityDetailViewController" customModule="HealthHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Otx-n8-Vbl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0E-NO-Mbg">
+                                <rect key="frame" x="24" y="24" width="203" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="iYh-kn-LFd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Akkurat-Bold" family="Akkurat-Bold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJZ-mu-MTx">
+                                <rect key="frame" x="24" y="74" width="203" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="Ago-kb-E1q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Akkurat-Bold" family="Akkurat-Bold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJI-DM-SVV">
+                                <rect key="frame" x="24" y="214" width="327" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q6K-Jk-3TW">
+                                <rect key="frame" x="251" y="24" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Eeo-y5-c1d"/>
+                                    <constraint firstAttribute="height" constant="100" id="HHg-lO-Fde"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwh-3Y-yY3" customClass="ButtonLight" customModule="HealthHack" customModuleProvider="target">
+                                <rect key="frame" x="24" y="154" width="327" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZU9-tb-hhU"/>
+                                </constraints>
+                                <state key="normal" title="Documents"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RhC-Oh-yaq"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CJZ-mu-MTx" firstAttribute="leading" secondItem="Otx-n8-Vbl" secondAttribute="leading" constant="24" id="6s9-d9-6fL"/>
+                            <constraint firstAttribute="trailing" secondItem="NJI-DM-SVV" secondAttribute="trailing" constant="24" id="80v-jP-Kae"/>
+                            <constraint firstItem="NJI-DM-SVV" firstAttribute="leading" secondItem="Otx-n8-Vbl" secondAttribute="leading" constant="24" id="90h-2D-kCV"/>
+                            <constraint firstItem="Q6K-Jk-3TW" firstAttribute="top" secondItem="Otx-n8-Vbl" secondAttribute="top" constant="24" id="Dyv-1M-k7t"/>
+                            <constraint firstItem="Q6K-Jk-3TW" firstAttribute="leading" secondItem="j0E-NO-Mbg" secondAttribute="trailing" constant="24" id="Ez6-7C-uhx"/>
+                            <constraint firstItem="Q6K-Jk-3TW" firstAttribute="leading" secondItem="CJZ-mu-MTx" secondAttribute="trailing" constant="24" id="IGe-sL-3IW"/>
+                            <constraint firstAttribute="trailing" secondItem="Q6K-Jk-3TW" secondAttribute="trailing" constant="24" id="Iwg-do-Hr7"/>
+                            <constraint firstItem="j0E-NO-Mbg" firstAttribute="top" secondItem="Otx-n8-Vbl" secondAttribute="top" constant="24" id="WF8-Wg-qJg"/>
+                            <constraint firstItem="NJI-DM-SVV" firstAttribute="top" secondItem="uwh-3Y-yY3" secondAttribute="bottom" constant="20" id="Yki-Ox-paw"/>
+                            <constraint firstAttribute="bottom" secondItem="NJI-DM-SVV" secondAttribute="bottom" constant="24" id="bL1-Q4-uz5"/>
+                            <constraint firstItem="CJZ-mu-MTx" firstAttribute="top" secondItem="j0E-NO-Mbg" secondAttribute="bottom" constant="24" id="gye-SQ-srN"/>
+                            <constraint firstItem="uwh-3Y-yY3" firstAttribute="leading" secondItem="Otx-n8-Vbl" secondAttribute="leading" constant="24" id="kqd-hy-N7p"/>
+                            <constraint firstAttribute="trailing" secondItem="uwh-3Y-yY3" secondAttribute="trailing" constant="24" id="nQ7-gb-flk"/>
+                            <constraint firstItem="uwh-3Y-yY3" firstAttribute="top" secondItem="Q6K-Jk-3TW" secondAttribute="bottom" constant="30" id="tVO-Ye-R0h"/>
+                            <constraint firstItem="j0E-NO-Mbg" firstAttribute="leading" secondItem="Otx-n8-Vbl" secondAttribute="leading" constant="24" id="wKR-jh-7vg"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="buttonDocuments" destination="uwh-3Y-yY3" id="0kr-VV-1bg"/>
+                        <outlet property="imageView" destination="Q6K-Jk-3TW" id="mTT-2I-eSs"/>
+                        <outlet property="labelDate" destination="CJZ-mu-MTx" id="Eez-xr-vwS"/>
+                        <outlet property="labelDescription" destination="j0E-NO-Mbg" id="ESa-H5-orH"/>
+                        <outlet property="textView" destination="NJI-DM-SVV" id="Uzt-OD-uzQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpL-jN-0wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.60000000000002" y="385.90704647676165"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="uwh-3Y-yY3">
+            <size key="intrinsicContentSize" width="79" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

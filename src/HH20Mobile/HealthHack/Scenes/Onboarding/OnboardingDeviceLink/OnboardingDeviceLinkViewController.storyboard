@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xZf-L1-Lxf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Akkurat-Bold.ttf">
+            <string>Akkurat-Bold</string>
+        </array>
+        <array key="Akkurat-Light.ttf">
+            <string>Akkurat-Light</string>
+        </array>
+        <array key="Akkurat-Normal.ttf">
+            <string>Akkurat</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding Device Link View Controller-->
+        <scene sceneID="bE3-GS-ChP">
+            <objects>
+                <viewController id="xZf-L1-Lxf" customClass="OnboardingDeviceLinkViewController" customModule="HealthHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Otx-n8-Vbl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYC-fv-kfr">
+                                <rect key="frame" x="16" y="20" width="88" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat-Bold" family="Akkurat-Bold" pointSize="17"/>
+                                <color key="textColor" name="textprimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg8-5K-dTI">
+                                <rect key="frame" x="16" y="118" width="116" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat-Bold" family="Akkurat-Bold" pointSize="17"/>
+                                <color key="textColor" name="textprimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diabetes Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKE-GX-EPS">
+                                <rect key="frame" x="16" y="225" width="128" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat-Bold" family="Akkurat-Bold" pointSize="17"/>
+                                <color key="textColor" name="textprimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose the devices or services you want to link" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNR-U4-fYb">
+                                <rect key="frame" x="16" y="48" width="343" height="40"/>
+                                <fontDescription key="fontDescription" name="Akkurat-Light" family="Akkurat-Light" pointSize="17"/>
+                                <color key="textColor" name="textprimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Health" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DP9-Pz-NtJ">
+                                <rect key="frame" x="16" y="146" width="100" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat-Light" family="Akkurat-Light" pointSize="17"/>
+                                <color key="textColor" name="textprimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tno-2W-ds1">
+                                <rect key="frame" x="16" y="253" width="46" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat-Light" family="Akkurat-Light" pointSize="17"/>
+                                <color key="textColor" name="textprimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohk-Qx-NZl" customClass="ButtonDark" customModule="HealthHack" customModuleProvider="target">
+                                <rect key="frame" x="239" y="144" width="120" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="6G6-xk-09q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                <state key="normal" title="Link"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eiq-hj-tuk" customClass="ButtonDark" customModule="HealthHack" customModuleProvider="target">
+                                <rect key="frame" x="239" y="300" width="120" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="DH0-Ir-sJY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                <state key="normal" title="Link"/>
+                                <connections>
+                                    <action selector="onDiabetesLinkPressed:" destination="xZf-L1-Lxf" eventType="touchUpInside" id="VnW-q5-3AB"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wVR-Xg-nHO">
+                                <rect key="frame" x="237.5" y="254" width="121.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onTrackerBrandFieldEntered:" destination="xZf-L1-Lxf" eventType="editingDidBegin" id="XTI-ps-wAY"/>
+                                    <action selector="onTrackerBrandFieldLeft:" destination="xZf-L1-Lxf" eventType="editingDidEnd" id="OuY-f3-VZw"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEM-qV-c3Z" customClass="ButtonDark" customModule="HealthHack" customModuleProvider="target">
+                                <rect key="frame" x="239" y="615" width="120" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="amd-gw-wP3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                <state key="normal" title="Finish"/>
+                                <connections>
+                                    <action selector="onFinishButtonPressed:" destination="xZf-L1-Lxf" eventType="touchUpInside" id="qpr-7E-gAv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Linked" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sh9-SS-an7">
+                                <rect key="frame" x="284.5" y="304" width="50.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="signalgruen"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Re-2m-6q7"/>
+                        <color key="backgroundColor" name="apphintergrund"/>
+                        <constraints>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="NEM-qV-c3Z" secondAttribute="trailing" constant="16" id="0RE-CH-Cnv"/>
+                            <constraint firstItem="VYC-fv-kfr" firstAttribute="top" secondItem="5Re-2m-6q7" secondAttribute="top" constant="20" id="84H-Z5-fCy"/>
+                            <constraint firstItem="DP9-Pz-NtJ" firstAttribute="top" secondItem="pg8-5K-dTI" secondAttribute="bottom" constant="8" symbolic="YES" id="97B-gF-RAE"/>
+                            <constraint firstItem="Ohk-Qx-NZl" firstAttribute="leading" secondItem="DP9-Pz-NtJ" secondAttribute="trailing" constant="123" id="ACE-J0-v3V"/>
+                            <constraint firstItem="pg8-5K-dTI" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="16" id="BNt-xP-T2L"/>
+                            <constraint firstItem="NKE-GX-EPS" firstAttribute="top" secondItem="DP9-Pz-NtJ" secondAttribute="bottom" constant="59" id="BmL-Ei-H8F"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="Ohk-Qx-NZl" secondAttribute="trailing" constant="16" id="CGQ-mC-ei2"/>
+                            <constraint firstItem="DP9-Pz-NtJ" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="16" id="HmN-h3-N4b"/>
+                            <constraint firstItem="qNR-U4-fYb" firstAttribute="top" secondItem="VYC-fv-kfr" secondAttribute="bottom" constant="8" symbolic="YES" id="Ioe-Jw-YGv"/>
+                            <constraint firstItem="Ohk-Qx-NZl" firstAttribute="top" secondItem="qNR-U4-fYb" secondAttribute="bottom" constant="56" id="NII-RZ-xpP"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="Eiq-hj-tuk" secondAttribute="trailing" constant="16" id="O0i-P6-N81"/>
+                            <constraint firstItem="tno-2W-ds1" firstAttribute="top" secondItem="NKE-GX-EPS" secondAttribute="bottom" constant="8" symbolic="YES" id="QO9-FS-OMA"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="wVR-Xg-nHO" secondAttribute="trailing" constant="16" id="RLf-cJ-z37"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="bottom" secondItem="NEM-qV-c3Z" secondAttribute="bottom" constant="20" id="T3A-XM-DLg"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="qNR-U4-fYb" secondAttribute="trailing" constant="16" id="UEJ-DM-d4V"/>
+                            <constraint firstItem="qNR-U4-fYb" firstAttribute="top" secondItem="VYC-fv-kfr" secondAttribute="bottom" constant="8" symbolic="YES" id="Y8J-6k-xZE"/>
+                            <constraint firstItem="qNR-U4-fYb" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="16" id="efF-93-jzd"/>
+                            <constraint firstItem="wVR-Xg-nHO" firstAttribute="leading" secondItem="tno-2W-ds1" secondAttribute="trailing" constant="175.5" id="js8-Vr-cb2"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="sh9-SS-an7" secondAttribute="trailing" constant="40" id="kWH-nX-hAL"/>
+                            <constraint firstItem="wVR-Xg-nHO" firstAttribute="top" secondItem="Ohk-Qx-NZl" secondAttribute="bottom" constant="78" id="ljw-jM-GcS"/>
+                            <constraint firstItem="tno-2W-ds1" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="16" id="pcS-Bt-YgT"/>
+                            <constraint firstItem="Eiq-hj-tuk" firstAttribute="top" secondItem="wVR-Xg-nHO" secondAttribute="bottom" constant="12" id="rky-Zn-aIB"/>
+                            <constraint firstItem="NKE-GX-EPS" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="16" id="ss6-O8-2C8"/>
+                            <constraint firstItem="VYC-fv-kfr" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="16" id="vRu-v2-A1q"/>
+                            <constraint firstItem="pg8-5K-dTI" firstAttribute="top" secondItem="qNR-U4-fYb" secondAttribute="bottom" constant="30" id="yMp-aL-tCg"/>
+                            <constraint firstItem="sh9-SS-an7" firstAttribute="top" secondItem="wVR-Xg-nHO" secondAttribute="bottom" constant="16" id="zZP-GF-UMW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityTrackerTitle" destination="pg8-5K-dTI" id="5Vo-nK-ezV"/>
+                        <outlet property="appleHealthTracker" destination="DP9-Pz-NtJ" id="r7P-Tk-yJc"/>
+                        <outlet property="diabetesBrand" destination="tno-2W-ds1" id="XAl-4m-3N9"/>
+                        <outlet property="diabetesBrandPickerField" destination="wVR-Xg-nHO" id="fYd-cc-Gdb"/>
+                        <outlet property="diabetesTitle" destination="NKE-GX-EPS" id="doZ-ZC-Fr8"/>
+                        <outlet property="linkAppleHealthButton" destination="Ohk-Qx-NZl" id="PB5-sk-Mfe"/>
+                        <outlet property="linkDiabetesTrackerButton" destination="Eiq-hj-tuk" id="ruB-Qi-qyA"/>
+                        <outlet property="linkedLabel" destination="sh9-SS-an7" id="1p6-ok-Wgm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpL-jN-0wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.60000000000002" y="385.45727136431788"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Eiq-hj-tuk">
+            <size key="intrinsicContentSize" width="32" height="32"/>
+        </designable>
+        <designable name="NEM-qV-c3Z">
+            <size key="intrinsicContentSize" width="45" height="32"/>
+        </designable>
+        <designable name="Ohk-Qx-NZl">
+            <size key="intrinsicContentSize" width="32" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="apphintergrund">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="signalgruen">
+            <color red="0.37299999594688416" green="0.60000002384185791" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textprimary">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

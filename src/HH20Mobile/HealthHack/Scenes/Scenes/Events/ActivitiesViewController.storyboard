@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xZf-L1-Lxf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Activities View Controller-->
+        <scene sceneID="bE3-GS-ChP">
+            <objects>
+                <viewController id="xZf-L1-Lxf" customClass="ActivitiesViewController" customModule="HealthHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Otx-n8-Vbl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bnk-rf-2j4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="GL8-sA-HXQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoH-G1-JzX">
+                                            <rect key="frame" x="24" y="5" width="42.5" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="YzF-J9-fcI"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="textprimary"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zkG-1M-a80">
+                                            <rect key="frame" x="97" y="7" width="30" height="30"/>
+                                            <color key="tintColor" name="helsanarot"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="wZc-Z3-8sE"/>
+                                                <constraint firstAttribute="width" constant="30" id="yKK-7z-F1I"/>
+                                            </constraints>
+                                        </imageView>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="All" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J6Z-ip-7Rc">
+                                            <rect key="frame" x="151" y="5" width="200" height="34"/>
+                                            <color key="tintColor" name="helsanarot"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="fk5-Vh-ApX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" name="apphintergrund"/>
+                                    <constraints>
+                                        <constraint firstItem="ZoH-G1-JzX" firstAttribute="top" secondItem="GL8-sA-HXQ" secondAttribute="top" constant="5" id="KvH-7p-bq1"/>
+                                        <constraint firstAttribute="bottom" secondItem="J6Z-ip-7Rc" secondAttribute="bottom" constant="5" id="LjS-7i-ho5"/>
+                                        <constraint firstAttribute="trailing" secondItem="J6Z-ip-7Rc" secondAttribute="trailing" constant="24" id="VtN-dX-vZa"/>
+                                        <constraint firstItem="zkG-1M-a80" firstAttribute="centerY" secondItem="J6Z-ip-7Rc" secondAttribute="centerY" id="Xes-nr-TYs"/>
+                                        <constraint firstItem="ZoH-G1-JzX" firstAttribute="leading" secondItem="GL8-sA-HXQ" secondAttribute="leading" constant="24" id="Z0g-E3-ilU"/>
+                                        <constraint firstItem="J6Z-ip-7Rc" firstAttribute="top" secondItem="GL8-sA-HXQ" secondAttribute="top" constant="5" id="iCb-W9-xLb"/>
+                                        <constraint firstItem="J6Z-ip-7Rc" firstAttribute="leading" secondItem="zkG-1M-a80" secondAttribute="trailing" constant="24" id="jYm-6V-G6O"/>
+                                        <constraint firstAttribute="bottom" secondItem="ZoH-G1-JzX" secondAttribute="bottom" constant="5" id="q6N-04-21U"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="pfi-Nd-kt2">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pfi-Nd-kt2" id="h5B-sl-p06">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Re-2m-6q7"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="Bnk-rf-2j4" secondAttribute="trailing" id="URL-Je-fUE"/>
+                            <constraint firstItem="Bnk-rf-2j4" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" id="X49-mS-u4d"/>
+                            <constraint firstItem="Bnk-rf-2j4" firstAttribute="top" secondItem="5Re-2m-6q7" secondAttribute="top" id="Yg3-C2-1cz"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="bottom" secondItem="Bnk-rf-2j4" secondAttribute="bottom" id="wm0-HC-drM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewFilterPicker" destination="zkG-1M-a80" id="B23-aP-ejQ"/>
+                        <outlet property="tableView" destination="Bnk-rf-2j4" id="NaU-ag-Yg8"/>
+                        <outlet property="textFieldFilterPicker" destination="J6Z-ip-7Rc" id="rSH-F8-6he"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpL-jN-0wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.60000000000002" y="385.45727136431788"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="apphintergrund">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="helsanarot">
+            <color red="0.60399997234344482" green="0.035000000149011612" blue="0.25499999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textprimary">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

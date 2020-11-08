@@ -1,0 +1,118 @@
+PODS:
+  - Alamofire (4.9.1)
+  - GoogleDataTransport (8.0.0):
+    - nanopb (~> 2.30906.0)
+  - GoogleMLKit/MLKitCore (0.64.0):
+    - MLKitCommon (~> 0.64.0)
+  - GoogleMLKit/TextRecognition (0.64.0):
+    - GoogleMLKit/MLKitCore
+    - MLKitTextRecognition (~> 0.64.0)
+  - GoogleToolboxForMac/DebugUtils (2.3.0):
+    - GoogleToolboxForMac/Defines (= 2.3.0)
+  - GoogleToolboxForMac/Defines (2.3.0)
+  - GoogleToolboxForMac/Logger (2.3.0):
+    - GoogleToolboxForMac/Defines (= 2.3.0)
+  - "GoogleToolboxForMac/NSData+zlib (2.3.0)":
+    - GoogleToolboxForMac/Defines (= 2.3.0)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.3.0)":
+    - GoogleToolboxForMac/DebugUtils (= 2.3.0)
+    - GoogleToolboxForMac/Defines (= 2.3.0)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.3.0)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.3.0)"
+  - GoogleUtilities/Environment (7.0.0):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (7.0.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/UserDefaults (7.0.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilitiesComponents (1.0.0):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.5.0)
+  - Kingfisher (4.6.3)
+  - MBProgressHUD (1.1.0)
+  - MLKitCommon (0.64.2):
+    - GoogleDataTransport (~> 8.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - GoogleUtilities/UserDefaults (~> 7.0)
+    - GoogleUtilitiesComponents (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.12)
+  - MLKitTextRecognition (0.64.0):
+    - MLKitCommon (~> 0.64)
+    - MLKitVision (~> 0.64)
+  - MLKitVision (0.64.0):
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+    - MLKitCommon (~> 0.64)
+    - Protobuf (~> 3.12)
+  - nanopb (2.30906.0):
+    - nanopb/decode (= 2.30906.0)
+    - nanopb/encode (= 2.30906.0)
+  - nanopb/decode (2.30906.0)
+  - nanopb/encode (2.30906.0)
+  - ObjectMapper (3.5.3)
+  - PromisesObjC (1.2.11)
+  - Protobuf (3.13.0)
+  - ReachabilitySwift (4.1.0)
+  - SwiftyJSON (4.0.0)
+  - TimelineTableViewCell (2.2.1)
+
+DEPENDENCIES:
+  - Alamofire (= 4.9.1)
+  - GoogleMLKit/TextRecognition
+  - Kingfisher (= 4.6.3)
+  - MBProgressHUD (= 1.1.0)
+  - ObjectMapper (= 3.5.3)
+  - ReachabilitySwift (= 4.1.0)
+  - SwiftyJSON (= 4.0.0)
+  - TimelineTableViewCell (~> 2.2.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - GoogleDataTransport
+    - GoogleMLKit
+    - GoogleToolboxForMac
+    - GoogleUtilities
+    - GoogleUtilitiesComponents
+    - GTMSessionFetcher
+    - Kingfisher
+    - MBProgressHUD
+    - MLKitCommon
+    - MLKitTextRecognition
+    - MLKitVision
+    - nanopb
+    - ObjectMapper
+    - PromisesObjC
+    - Protobuf
+    - ReachabilitySwift
+    - SwiftyJSON
+    - TimelineTableViewCell
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  GoogleDataTransport: 6ce8004a961db1b905740d7be106c61ba7e89c21
+  GoogleMLKit: 3c1f895592d95625eb57b8e66d4f13a5d36f9b49
+  GoogleToolboxForMac: 1350d40e86a76f7863928d63bcb0b89c84c521c5
+  GoogleUtilities: ffb2f4159f2c897c6e8992bd7fbcdef8a300589c
+  GoogleUtilitiesComponents: a69c0b3b369ba443e988141e75ef49d9010b1c80
+  GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
+  Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MLKitCommon: bc4f9fc68ea0edba2e8cbb16805df924f40b0e38
+  MLKitTextRecognition: 3ca1c65117899a7538d1f3c012c916ac1483698d
+  MLKitVision: bd96ec12ea19d589435523c914766538da259161
+  nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
+  Protobuf: 3dac39b34a08151c6d949560efe3f86134a3f748
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  TimelineTableViewCell: b2721a3c1f17c4a4950ae442f45cd4e8669a2750
+
+PODFILE CHECKSUM: 911ddb4211310da93664d870ca553237598271c4
+
+COCOAPODS: 1.10.0

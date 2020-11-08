@@ -1,0 +1,38 @@
+{
+	"info": {
+		"version": 1,
+		"author": "Sketch Themes Plugin"
+	},
+	"colors": [
+		{
+			"idiom": "universal",
+			"color": {
+				"color-space": "srgb",
+				"components": {
+					"red": "0.439",
+					"alpha": "1.00",
+					"blue": "0.439",
+					"green": "0.439"
+				}
+			}
+		},
+		{
+			"idiom": "universal",
+			"appearances": [
+				{
+					"appearance": "luminosity",
+					"value": "dark"
+				}
+			],
+			"color": {
+				"color-space": "srgb",
+				"components": {
+					"red": "0.580",
+					"alpha": "1.00",
+					"blue": "0.580",
+					"green": "0.580"
+				}
+			}
+		}
+	]
+}

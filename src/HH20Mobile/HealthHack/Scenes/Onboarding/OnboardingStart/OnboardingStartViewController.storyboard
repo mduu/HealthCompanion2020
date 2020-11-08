@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xZf-L1-Lxf">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Akkurat-Bold.ttf">
+            <string>Akkurat-Bold</string>
+        </array>
+        <array key="Akkurat-Light.ttf">
+            <string>Akkurat-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding Start View Controller-->
+        <scene sceneID="bE3-GS-ChP">
+            <objects>
+                <viewController id="xZf-L1-Lxf" customClass="OnboardingStartViewController" customModule="HealthHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Otx-n8-Vbl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health Companion Onboarding" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hS-jw-DgU">
+                                <rect key="frame" x="16" y="64" width="382" height="23.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Akkurat-Bold" family="Akkurat-Bold" pointSize="20"/>
+                                <color key="textColor" name="weiss"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtS-ue-oSk">
+                                <rect key="frame" x="16" y="806" width="66" height="36"/>
+                                <fontDescription key="fontDescription" name="Akkurat-Bold" family="Akkurat-Bold" pointSize="20"/>
+                                <state key="normal" title="Manual">
+                                    <color key="titleColor" name="weiss"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9k9-mQ-HgM">
+                                <rect key="frame" x="335" y="806" width="59" height="36"/>
+                                <fontDescription key="fontDescription" name="Akkurat-Bold" family="Akkurat-Bold" pointSize="20"/>
+                                <state key="normal" title="Import">
+                                    <color key="titleColor" name="weiss"/>
+                                </state>
+                                <connections>
+                                    <action selector="importButtonPressed:" destination="xZf-L1-Lxf" eventType="touchUpInside" id="o8D-Y3-HQL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to import data from your insurance provider or start onboarding manually?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcc-F3-1c4">
+                                <rect key="frame" x="20" y="159.33333333333334" width="374" height="39.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Akkurat-Light" family="Akkurat-Light" pointSize="17"/>
+                                <color key="textColor" name="weiss"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Re-2m-6q7"/>
+                        <color key="backgroundColor" name="helsanarot"/>
+                        <constraints>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="9k9-mQ-HgM" secondAttribute="trailing" constant="20" id="1WO-In-48u"/>
+                            <constraint firstItem="Zcc-F3-1c4" firstAttribute="top" secondItem="4hS-jw-DgU" secondAttribute="bottom" constant="72" id="23E-2x-4hu"/>
+                            <constraint firstItem="Zcc-F3-1c4" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="20" id="6qq-gD-Qwn"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="4hS-jw-DgU" secondAttribute="trailing" constant="16" id="Ohl-Ed-kYn"/>
+                            <constraint firstItem="4hS-jw-DgU" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="16" id="V1i-K4-3wK"/>
+                            <constraint firstItem="4hS-jw-DgU" firstAttribute="top" secondItem="5Re-2m-6q7" secondAttribute="top" constant="20" id="XMe-ef-SHV"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="bottom" secondItem="9k9-mQ-HgM" secondAttribute="bottom" constant="20" id="ixn-HY-Xs8"/>
+                            <constraint firstItem="CtS-ue-oSk" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="16" id="sLm-wg-Gcw"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="Zcc-F3-1c4" secondAttribute="trailing" constant="20" id="ugQ-sM-qqt"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="bottom" secondItem="CtS-ue-oSk" secondAttribute="bottom" constant="20" id="vkd-8K-Cwr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vr5-m9-j7n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpL-jN-0wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1488.4057971014495" y="385.04464285714283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="helsanarot">
+            <color red="0.60399997234344482" green="0.035000000149011612" blue="0.25499999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="weiss">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

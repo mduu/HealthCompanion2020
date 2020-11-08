@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xZf-L1-Lxf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Akkurat-Normal.ttf">
+            <string>Akkurat</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Share View Controller-->
+        <scene sceneID="bE3-GS-ChP">
+            <objects>
+                <viewController id="xZf-L1-Lxf" customClass="ShareViewController" customModule="HealthHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Otx-n8-Vbl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjI-L2-R9F" customClass="ButtonDark" customModule="HealthHack" customModuleProvider="target">
+                                <rect key="frame" x="24" y="603" width="327" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eMO-Ee-RlG"/>
+                                </constraints>
+                                <state key="normal" title="Get share URL"/>
+                                <connections>
+                                    <action selector="shareButtonPressed" destination="xZf-L1-Lxf" eventType="touchUpInside" id="jZO-P1-i32"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valid from:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZ8-nf-fzg">
+                                <rect key="frame" x="24" y="24" width="80.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" name="textprimary"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valid to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILv-Cd-Qlr">
+                                <rect key="frame" x="24" y="84" width="61" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" name="textprimary"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="G4N-fn-IDQ">
+                                <rect key="frame" x="131" y="9" width="220" height="50"/>
+                                <color key="tintColor" name="helsanarot"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hLB-Gj-uuX"/>
+                                    <constraint firstAttribute="width" constant="220" id="utg-qV-igl"/>
+                                </constraints>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="7FB-cT-Vjc">
+                                <rect key="frame" x="131" y="69" width="220" height="50"/>
+                                <color key="tintColor" name="helsanarot"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mpM-F9-Qee"/>
+                                    <constraint firstAttribute="width" constant="220" id="tco-Ub-uv6"/>
+                                </constraints>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you want to share?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LA-6t-FTh">
+                                <rect key="frame" x="24" y="159" width="327" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" name="textprimary"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmX-7Y-yaH">
+                                <rect key="frame" x="24" y="203" width="73.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" name="textprimary"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Documents:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLy-y9-aai">
+                                <rect key="frame" x="24" y="247" width="92" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" name="textprimary"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tc8-9C-Jdi">
+                                <rect key="frame" x="24" y="291" width="88.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" name="textprimary"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments write:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yop-Vo-Qp5">
+                                <rect key="frame" x="24" y="335" width="130" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" name="textprimary"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deseases:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCv-sb-act">
+                                <rect key="frame" x="24" y="379" width="79" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" name="textprimary"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accute Deseases:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baL-IL-w30">
+                                <rect key="frame" x="24" y="423" width="137" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" name="textprimary"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1m-Hf-ixC">
+                                <rect key="frame" x="302" y="197.5" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aae-C5-Tz9">
+                                <rect key="frame" x="302" y="241.5" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EVi-yj-nXa">
+                                <rect key="frame" x="302" y="285.5" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jum-sB-iJg">
+                                <rect key="frame" x="302" y="329.5" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jjI-uT-rWN">
+                                <rect key="frame" x="302" y="373.5" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Fp-6S-vV4">
+                                <rect key="frame" x="302" y="417.5" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Re-2m-6q7"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8LA-6t-FTh" firstAttribute="top" secondItem="7FB-cT-Vjc" secondAttribute="bottom" constant="40" id="1ZI-GM-SGw"/>
+                            <constraint firstItem="7FB-cT-Vjc" firstAttribute="centerY" secondItem="ILv-Cd-Qlr" secondAttribute="centerY" id="2Fc-gR-3cf"/>
+                            <constraint firstItem="qZ8-nf-fzg" firstAttribute="top" secondItem="5Re-2m-6q7" secondAttribute="top" constant="24" id="2Y9-hj-ETF"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="jjI-uT-rWN" secondAttribute="trailing" constant="24" id="2ul-5k-n86"/>
+                            <constraint firstItem="d1m-Hf-ixC" firstAttribute="centerY" secondItem="dmX-7Y-yaH" secondAttribute="centerY" id="4b7-w7-xuq"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="d1m-Hf-ixC" secondAttribute="trailing" constant="24" id="50v-vj-pMw"/>
+                            <constraint firstItem="baL-IL-w30" firstAttribute="top" secondItem="cCv-sb-act" secondAttribute="bottom" constant="24" id="6Mt-Me-ktd"/>
+                            <constraint firstItem="Jum-sB-iJg" firstAttribute="centerY" secondItem="yop-Vo-Qp5" secondAttribute="centerY" id="DzU-0E-8Vv"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="7FB-cT-Vjc" secondAttribute="trailing" constant="24" id="E6y-U2-C3V"/>
+                            <constraint firstItem="baL-IL-w30" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="24" id="Jre-ph-cBK"/>
+                            <constraint firstItem="hLy-y9-aai" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="24" id="KIk-Aa-UQB"/>
+                            <constraint firstItem="dmX-7Y-yaH" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="24" id="LiK-HY-btI"/>
+                            <constraint firstItem="ILv-Cd-Qlr" firstAttribute="top" secondItem="qZ8-nf-fzg" secondAttribute="bottom" constant="40" id="M2Z-lR-AH5"/>
+                            <constraint firstItem="Tc8-9C-Jdi" firstAttribute="top" secondItem="hLy-y9-aai" secondAttribute="bottom" constant="24" id="NZL-DN-j7f"/>
+                            <constraint firstItem="yop-Vo-Qp5" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="24" id="OT4-D9-gLm"/>
+                            <constraint firstItem="2Fp-6S-vV4" firstAttribute="centerY" secondItem="baL-IL-w30" secondAttribute="centerY" id="Pey-qO-0hW"/>
+                            <constraint firstItem="jjI-uT-rWN" firstAttribute="centerY" secondItem="cCv-sb-act" secondAttribute="centerY" id="R8a-qZ-sel"/>
+                            <constraint firstItem="cCv-sb-act" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="24" id="RHR-UA-4VV"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="Jum-sB-iJg" secondAttribute="trailing" constant="24" id="Rdb-Xx-82I"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="8LA-6t-FTh" secondAttribute="trailing" constant="24" id="T9Y-oO-j8J"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="EVi-yj-nXa" secondAttribute="trailing" constant="24" id="Vix-2B-2VJ"/>
+                            <constraint firstItem="dmX-7Y-yaH" firstAttribute="top" secondItem="8LA-6t-FTh" secondAttribute="bottom" constant="24" id="Xta-RP-DAh"/>
+                            <constraint firstItem="Tc8-9C-Jdi" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="24" id="Yfg-6f-aqU"/>
+                            <constraint firstItem="G4N-fn-IDQ" firstAttribute="centerY" secondItem="qZ8-nf-fzg" secondAttribute="centerY" id="Z3M-J2-BN2"/>
+                            <constraint firstItem="8LA-6t-FTh" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="24" id="aWM-EY-PGf"/>
+                            <constraint firstItem="Aae-C5-Tz9" firstAttribute="centerY" secondItem="hLy-y9-aai" secondAttribute="centerY" id="b5d-nO-wri"/>
+                            <constraint firstItem="yop-Vo-Qp5" firstAttribute="top" secondItem="Tc8-9C-Jdi" secondAttribute="bottom" constant="24" id="eLY-bH-WVk"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="bottom" secondItem="TjI-L2-R9F" secondAttribute="bottom" constant="24" id="ewG-ch-WYd"/>
+                            <constraint firstItem="ILv-Cd-Qlr" firstAttribute="leading" secondItem="qZ8-nf-fzg" secondAttribute="leading" id="hVg-yf-kAb"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="Aae-C5-Tz9" secondAttribute="trailing" constant="24" id="iZE-8v-tM1"/>
+                            <constraint firstItem="hLy-y9-aai" firstAttribute="top" secondItem="dmX-7Y-yaH" secondAttribute="bottom" constant="24" id="lgu-Yc-dMb"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="G4N-fn-IDQ" secondAttribute="trailing" constant="24" id="meK-QN-fKU"/>
+                            <constraint firstItem="TjI-L2-R9F" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="24" id="mnQ-7q-bSW"/>
+                            <constraint firstItem="EVi-yj-nXa" firstAttribute="centerY" secondItem="Tc8-9C-Jdi" secondAttribute="centerY" id="pe6-xq-JiB"/>
+                            <constraint firstItem="cCv-sb-act" firstAttribute="top" secondItem="yop-Vo-Qp5" secondAttribute="bottom" constant="24" id="qEe-Ng-piu"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="2Fp-6S-vV4" secondAttribute="trailing" constant="24" id="qmL-1U-lkF"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="TjI-L2-R9F" secondAttribute="trailing" constant="24" id="s5I-XZ-2TH"/>
+                            <constraint firstItem="qZ8-nf-fzg" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="24" id="wpO-9l-zCL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonShare" destination="TjI-L2-R9F" id="ofW-GO-iKB"/>
+                        <outlet property="datePickerFrom" destination="G4N-fn-IDQ" id="HHi-qY-6gm"/>
+                        <outlet property="datePickerTo" destination="7FB-cT-Vjc" id="niw-fv-Qz7"/>
+                        <outlet property="switchAllowAccuteDeseases" destination="2Fp-6S-vV4" id="lYj-4S-Qth"/>
+                        <outlet property="switchAllowActivities" destination="d1m-Hf-ixC" id="NyI-E3-rwb"/>
+                        <outlet property="switchAllowComments" destination="EVi-yj-nXa" id="wdu-nK-2ip"/>
+                        <outlet property="switchAllowCommentsWrite" destination="Jum-sB-iJg" id="44I-VR-rdy"/>
+                        <outlet property="switchAllowDeseases" destination="jjI-uT-rWN" id="VvB-Bw-KUy"/>
+                        <outlet property="switchAllowDocuments" destination="Aae-C5-Tz9" id="nSD-dg-hh3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpL-jN-0wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.60000000000002" y="385.45727136431788"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="TjI-L2-R9F">
+            <size key="intrinsicContentSize" width="100" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="helsanarot">
+            <color red="0.60399997234344482" green="0.035000000149011612" blue="0.25499999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textprimary">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

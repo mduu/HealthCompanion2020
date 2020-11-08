@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xZf-L1-Lxf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Akkurat-Bold.ttf">
+            <string>Akkurat-Bold</string>
+        </array>
+        <array key="Akkurat-Light.ttf">
+            <string>Akkurat-Light</string>
+        </array>
+        <array key="Akkurat-Normal.ttf">
+            <string>Akkurat</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding Documents View Controller-->
+        <scene sceneID="bE3-GS-ChP">
+            <objects>
+                <viewController id="xZf-L1-Lxf" customClass="OnboardingDocumentsViewController" customModule="HealthHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Otx-n8-Vbl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6of-yy-8U5">
+                                <rect key="frame" x="0.0" y="110" width="375" height="488"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" name="apphintergrund"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="onboardingDocumentsCell" id="ZLh-96-eTY" customClass="OnboardingDocumentsCell" customModule="HealthHack" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZLh-96-eTY" id="PsY-qQ-wkU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWt-nv-wa5">
+                                                    <rect key="frame" x="16" y="11" width="41.5" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" name="textprimary"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="veD-D7-3dw">
+                                                    <rect key="frame" x="308" y="6" width="51" height="31.5"/>
+                                                    <connections>
+                                                        <action selector="onDocumentSwitchChanged:" destination="ZLh-96-eTY" eventType="valueChanged" id="r2K-qM-Bdq"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="veD-D7-3dw" secondAttribute="trailing" constant="18" id="1ah-hd-hUj"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="rWt-nv-wa5" secondAttribute="bottom" id="D7e-HS-lTR"/>
+                                                <constraint firstItem="veD-D7-3dw" firstAttribute="top" secondItem="PsY-qQ-wkU" secondAttribute="top" constant="6" id="K8R-Qz-Jkp"/>
+                                                <constraint firstItem="rWt-nv-wa5" firstAttribute="leading" secondItem="PsY-qQ-wkU" secondAttribute="leadingMargin" id="Kpu-fr-PGa"/>
+                                                <constraint firstAttribute="bottom" secondItem="veD-D7-3dw" secondAttribute="bottom" constant="6.5" id="W81-ts-ngt"/>
+                                                <constraint firstItem="rWt-nv-wa5" firstAttribute="top" secondItem="PsY-qQ-wkU" secondAttribute="topMargin" id="ics-Ld-Tq1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="documentName" destination="rWt-nv-wa5" id="swF-Qn-PpS"/>
+                                            <outlet property="isDocumentActive" destination="veD-D7-3dw" id="5AL-wP-8BN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Documents / Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ten-Is-xxz">
+                                <rect key="frame" x="16" y="20" width="138" height="20"/>
+                                <fontDescription key="fontDescription" name="Akkurat-Bold" family="Akkurat-Bold" pointSize="17"/>
+                                <color key="textColor" name="textprimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which documents / data should be imported to the Health Companion?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rh5-VB-YvU">
+                                <rect key="frame" x="16" y="48" width="343" height="40"/>
+                                <fontDescription key="fontDescription" name="Akkurat-Light" family="Akkurat-Light" pointSize="17"/>
+                                <color key="textColor" name="textprimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKX-qK-hwB" customClass="ButtonDark" customModule="HealthHack" customModuleProvider="target">
+                                <rect key="frame" x="239" y="615" width="120" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Xto-g3-zEU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="17"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="onContinueButtonPressed:" destination="xZf-L1-Lxf" eventType="touchUpInside" id="d1x-6G-mis"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Re-2m-6q7"/>
+                        <color key="backgroundColor" name="apphintergrund"/>
+                        <constraints>
+                            <constraint firstItem="Rh5-VB-YvU" firstAttribute="top" secondItem="Ten-Is-xxz" secondAttribute="bottom" constant="8" symbolic="YES" id="0rZ-lb-GbD"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="bottom" secondItem="vKX-qK-hwB" secondAttribute="bottom" constant="20" id="Eym-fc-itP"/>
+                            <constraint firstItem="Ten-Is-xxz" firstAttribute="top" secondItem="5Re-2m-6q7" secondAttribute="top" constant="20" id="JFq-aQ-GTg"/>
+                            <constraint firstItem="6of-yy-8U5" firstAttribute="top" secondItem="Rh5-VB-YvU" secondAttribute="bottom" constant="22" id="O92-uc-Y64"/>
+                            <constraint firstItem="Ten-Is-xxz" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="16" id="Rmy-Mz-Iez"/>
+                            <constraint firstItem="6of-yy-8U5" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" id="Zke-Nn-ebp"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="Rh5-VB-YvU" secondAttribute="trailing" constant="16" id="Zkq-Gj-ABd"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="bottom" secondItem="6of-yy-8U5" secondAttribute="bottom" constant="69" id="gxw-6n-M6a"/>
+                            <constraint firstItem="6of-yy-8U5" firstAttribute="trailing" secondItem="5Re-2m-6q7" secondAttribute="trailing" id="hOC-yr-Trx"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="vKX-qK-hwB" secondAttribute="trailing" constant="16" id="yfP-UQ-5CJ"/>
+                            <constraint firstItem="Rh5-VB-YvU" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="16" id="zjm-P3-HS2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="documentsTableView" destination="6of-yy-8U5" id="LMC-SL-exF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpL-jN-0wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.60000000000002" y="385.45727136431788"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="vKX-qK-hwB">
+            <size key="intrinsicContentSize" width="69" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="apphintergrund">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textprimary">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

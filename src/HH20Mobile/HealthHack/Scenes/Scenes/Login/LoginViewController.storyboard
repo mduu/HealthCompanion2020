@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xZf-L1-Lxf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Akkurat-Bold.ttf">
+            <string>Akkurat-Bold</string>
+        </array>
+        <array key="Akkurat-Normal.ttf">
+            <string>Akkurat</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="bE3-GS-ChP">
+            <objects>
+                <viewController id="xZf-L1-Lxf" customClass="LoginViewController" customModule="HealthHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Otx-n8-Vbl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cH3-Zf-utg" customClass="ButtonDark" customModule="HealthHack" customModuleProvider="target">
+                                <rect key="frame" x="24" y="158.5" width="327" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="x0p-4V-7as"/>
+                                </constraints>
+                                <state key="normal" title="Hans Fitter"/>
+                                <connections>
+                                    <action selector="hansFitterTapped" destination="xZf-L1-Lxf" eventType="touchUpInside" id="Ugc-uX-Anc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IP6-ZK-VvT" customClass="ButtonDark" customModule="HealthHack" customModuleProvider="target">
+                                <rect key="frame" x="24" y="258.5" width="327" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5M7-3u-3W2"/>
+                                </constraints>
+                                <state key="normal" title="Peter Muster"/>
+                                <connections>
+                                    <action selector="peterMusterTapped" destination="xZf-L1-Lxf" eventType="touchUpInside" id="nef-7t-ILW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoA-Oi-AcW">
+                                <rect key="frame" x="24" y="24" width="327" height="40"/>
+                                <fontDescription key="fontDescription" name="Akkurat-Bold" family="Akkurat-Bold" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" name="textprimary"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a Demo User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3T-HR-FeD">
+                                <rect key="frame" x="24" y="88" width="327" height="30.5"/>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" name="textprimary"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skip OnBoarding:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50l-7r-mNI">
+                                <rect key="frame" x="24" y="358.5" width="206" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="QGp-VQ-qWc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" name="textprimary"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ked-5D-SF2">
+                                <rect key="frame" x="302" y="355.5" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Re-2m-6q7"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="50l-7r-mNI" firstAttribute="top" secondItem="IP6-ZK-VvT" secondAttribute="bottom" constant="50" id="93f-Zm-4UD"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="cH3-Zf-utg" secondAttribute="trailing" constant="24" id="9gO-Nk-0df"/>
+                            <constraint firstItem="ked-5D-SF2" firstAttribute="centerY" secondItem="50l-7r-mNI" secondAttribute="centerY" id="IqD-nq-Q0h"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="B3T-HR-FeD" secondAttribute="trailing" constant="24" id="JWd-Ml-DOP"/>
+                            <constraint firstItem="yoA-Oi-AcW" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="24" id="JpC-Ui-nOz"/>
+                            <constraint firstItem="yoA-Oi-AcW" firstAttribute="top" secondItem="5Re-2m-6q7" secondAttribute="top" constant="24" id="TnB-Tg-Z5N"/>
+                            <constraint firstItem="IP6-ZK-VvT" firstAttribute="top" secondItem="cH3-Zf-utg" secondAttribute="bottom" constant="50" id="ZnC-WX-65t"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="yoA-Oi-AcW" secondAttribute="trailing" constant="24" id="aIQ-aV-npE"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="IP6-ZK-VvT" secondAttribute="trailing" constant="24" id="paH-Qa-dII"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="ked-5D-SF2" secondAttribute="trailing" constant="24" id="pfe-8m-MkV"/>
+                            <constraint firstItem="B3T-HR-FeD" firstAttribute="top" secondItem="yoA-Oi-AcW" secondAttribute="bottom" constant="24" id="qSo-2Q-ugK"/>
+                            <constraint firstItem="50l-7r-mNI" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="24" id="t6c-fo-PHs"/>
+                            <constraint firstItem="cH3-Zf-utg" firstAttribute="top" secondItem="B3T-HR-FeD" secondAttribute="bottom" constant="40" id="vRV-mZ-1Yn"/>
+                            <constraint firstItem="B3T-HR-FeD" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="24" id="vlh-PR-yju"/>
+                            <constraint firstItem="cH3-Zf-utg" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="24" id="whA-xP-cVk"/>
+                            <constraint firstItem="IP6-ZK-VvT" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="24" id="y6l-vn-MAo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="onboardingSwitch" destination="ked-5D-SF2" id="G7N-tw-saZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpL-jN-0wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="551" y="386"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="IP6-ZK-VvT">
+            <size key="intrinsicContentSize" width="89" height="30"/>
+        </designable>
+        <designable name="cH3-Zf-utg">
+            <size key="intrinsicContentSize" width="76" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="textprimary">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
